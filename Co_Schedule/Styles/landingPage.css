@@ -1,0 +1,359 @@
+/* styling of the request a demo  */
+
+#organise-request {
+  height: 230px;
+  background: linear-gradient(90deg, #f37e5d 0, #f9a97d);
+}
+#organise-request h2 {
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+  font-size: 26px;
+  font-weight: 550;
+}
+#organise-request span {
+  height: 130px;
+  display: grid;
+  grid-gap: 15%;
+}
+#organise-request button {
+  height: 50px;
+  width: 220px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #f37e5d;
+  font-size: 15px;
+  font-weight: 560;
+  border: none;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* styling of the fastest growing market  */
+
+#fastest-growing {
+  height: 450px;
+  /* border:1px solid black; */
+  line-height: 20px;
+  padding: 10px;
+}
+#three {
+  height: 300px;
+  width: 70%;
+  margin: auto;
+  grid-template-areas: "a b c";
+  /* border:1px solid teal; */
+  display: grid;
+  margin-top: 50px;
+  grid-gap: 13%;
+  grid-template-columns: repeat(3, 260px);
+  grid-template-rows: repeat(1, 260px);
+}
+#fastest-growing h2 {
+  color: #4b4b4b;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 550;
+}
+#fastest-growing p {
+  text-align: center;
+  font-size: 18px;
+  color: #4b4b4b;
+}
+#gartner {
+  grid-area: a;
+  cursor: pointer;
+  /* border: 1px solid ; */
+  padding-left: 40px;
+  padding-right: 30px;
+  line-height: 18px;
+}
+#gartner:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+#gartner h2 {
+  font-size: 50px;
+  font-weight: 550;
+  color: #4b4b4b;
+  margin-bottom: 10px;
+}
+#gartner h4 {
+  font-size: 20px;
+  font-weight: 550;
+  color: #4b4b4b;
+  border-bottom: 1px solid #4b4b4b;
+  text-align: center;
+  padding: 6px;
+  margin-top: 6px;
+}
+#gartner p {
+  line-height: 30px;
+}
+#inc {
+  grid-area: b;
+  cursor: pointer;
+  padding: 25px;
+  /* border: 1px solid; */
+}
+#inc img {
+  height: 80x;
+  width: 140px;
+  margin-left: 34px;
+}
+#inc p {
+  line-height: 30px;
+}
+#inc:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+#performer {
+  grid-area: c;
+  padding: 34px;
+  /* border:1px solid teal; */
+}
+#performer img {
+  height: 110x;
+  width: 80px;
+  margin-left: 49px;
+}
+#performer p {
+  color: #4b4b4b;
+  font-size: 18px;
+  line-height: 28px;
+}
+#performer:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+/* styling of the our products will come here  */
+
+#our-products {
+  height: 1150px;
+  background-color: #f8f8f8;
+  /* border:1px solid blue; */
+}
+#our-products h2 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 550;
+  padding: 1%;
+  padding-top: 35px;
+}
+#four-products {
+  height: 1000px;
+  grid-template-columns: repeat(2, 410px);
+  display: grid;
+  grid-template-areas:
+    "a b "
+    "c d";
+  grid-gap: 3%;
+  padding-top: 2%;
+  padding-left: 21%;
+  grid-template-rows: repeat(2, 450px);
+}
+#marketing-calender {
+  grid-area: a;
+  box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 20%);
+  display: grid;
+}
+#product-image {
+  object-fit: cover;
+  height: 120px;
+  width: 410px;
+}
+#inner-product {
+  height: 250px;
+  /* border:1px solid ; */
+  padding: 35px;
+}
+#inner-product h3 {
+  font-weight: 570;
+  font-size: 22px;
+  color: #4b4b4b;
+}
+#inner-product p {
+  color: #4b4b4b;
+  font-size: 18px;
+}
+#product-icon {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 40px;
+}
+#check-icon {
+  height: 13px;
+  width: 13px;
+  padding: 4px;
+}
+li {
+  list-style-type: none;
+  line-height: 26px;
+  font-size: 15px;
+  color: #4b4b4b;
+}
+#explore-more {
+  padding: 12px 30px;
+  border: none;
+  background-color: #ffede3;
+  color: #f37e5d;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#marketing-suite {
+  grid-area: b;
+  box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 20%);
+  display: grid;
+}
+#marketing-suite #inner-product {
+  height: 200px;
+  padding: 22px;
+  margin-bottom: 60px;
+}
+#marketing-suite #product-icon {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 40px;
+}
+#headline-studio {
+  grid-area: c;
+  box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 20%);
+  display: grid;
+}
+#headline-studio #inner-product {
+  height: 200px;
+  padding: 22px;
+  margin-bottom: 60px;
+}
+#headline-studio #product-icon {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 40px;
+}
+
+#marketing-institute {
+  grid-area: d;
+  box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 20%);
+  display: grid;
+}
+#marketing-institute #inner-product {
+  height: 200px;
+  padding: 22px;
+  margin-bottom: 60px;
+}
+#marketing-institute #product-icon {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 40px;
+}
+#icon-svg {
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  margin-top: 90px;
+  margin-left: 40px;
+  background-color: white;
+}
+#explore-more-blue {
+  padding: 12px 30px;
+  border: none;
+  background-color: #e6defa;
+  color: #835ce5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* here comes the styling of the div marketers  */
+#marketers {
+  height: 300px;
+  line-height: 70px;
+  /* border: 0.1px solid ; */
+}
+#marketers h2 {
+  text-align: center;
+  font-weight: 550;
+  font-size: 26px;
+  color: #4b4b4b;
+}
+#company-logo {
+  height: 60px;
+  width: 150px;
+}
+#marketers-one {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  gap: 6%;
+}
+#marketers-two {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  gap: 6%;
+  margin-top: 25px;
+}
+
+/* top styling comes here check  */
+#home-top {
+  height: 950px;
+  width: 100%;
+  display: grid;
+  /* border:1px solid red; */
+}
+#home-nav-top {
+  height: 550px;
+  /* border:1px solid black; */
+  background-color: #f8f8f8;
+}
+#organise-marketing {
+  height: 280px;
+  width: 50%;
+  margin: auto;
+  /* border:1px solid black; */
+  margin-top: 100px;
+}
+#organise-marketing h1 {
+  font-size: 46px;
+  text-align: center;
+  color: #4b4b4b;
+  /* border:1px solid #4b4b4b; */
+}
+#organise-p {
+  font-size: 18px;
+  text-align: center;
+  color: #4b4b4b;
+  /* border:1px solid #4b4b4b; */
+}
+#nav-btn {
+  height: 50px;
+  width: 220px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #f37e5d;
+  font-size: 15px;
+  font-weight: 560;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 35%;
+}
+#home-top-img {
+  position: absolute;
+  margin-left: 11%;
+  margin-top: 400px;
+}
+
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,53 @@
+
+#navbar {
+  height:50px;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  background-color:#f8f8f8;
+  /* border: 1px solid ; */
+  margin-top: 0;
+}
+#left-bar {
+  height:60px;
+  width:43%;
+  display:flex;
+}
+#right-bar {
+  height:60px;
+  width:25%;
+  display:flex;
+}
+#navbar-logo{
+  width: 180px;
+   height: 40px;
+  margin-top:15px;
+  margin-left:0px ;
+  cursor: pointer;
+ }
+ #navbar-btn{
+  background-color: #f37e5d;
+  height:44px;
+  width: 144px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius:5px;
+  margin:auto;
+  margin-top:15px;
+  cursor:pointer;
+ }
+ #navbar-head{
+   font-weight: 550;
+    color: #2f2f2f;
+    /* border:1px solid  red; */
+    font-family: MuseoSans-700, sans-serif;
+  font-size: 14.5px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 30px;
+ }
+ #navbar-head:hover{
+  color: #f37e5d;
+ }
+

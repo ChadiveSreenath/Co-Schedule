@@ -1,0 +1,104 @@
+* {
+  font-family: MuseoSans-700, sans-serif;
+}
+a{
+  text-decoration:none;
+}
+#footer {
+  height: 540px;
+  margin: auto;
+  background-color: #f8f8f8;
+}
+#inner-container {
+  height: 500px;
+  width: 73%;
+  /* border:1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(8, 108px);
+  grid-template-areas:
+    "a a b b c c d d"
+    ". . e e f f g g"
+    "h h h h h h h h";
+  grid-gap: 2.5%;
+  grid-template-rows: repeat(2, 210px);
+  margin: auto;
+  padding: 40px;
+}
+#footer-start {
+  grid-area: a;
+  line-height: 10px;
+  /* border: 1px solid ; */
+}
+#products {
+  grid-area: b;
+  line-height: 23px;
+  /* border: 1px solid ; */
+}
+#whycoschedule {
+  grid-area: c;
+  /* border: 1px solid ; */
+}
+#company {
+  grid-area: d;
+  /* border: 1px solid ; */
+}
+#resources {
+  grid-area: e;
+  /* border: 1px solid ; */
+}
+#guides {
+  grid-area: f;
+  /* border: 1px solid ;       */
+}
+#tools {
+  grid-area: g;
+  /* border: 1px solid ;    */
+}
+#footer-end {
+  grid-area: h;
+  /* border: 1px solid ;   */
+  display: flex;
+  justify-content: space-between;
+}
+#footer-p {
+  color: #989898;
+  font-size: 13px;
+  cursor: pointer;
+}
+#logo {
+  height: 50px;
+  width: 50px;
+}
+#icon {
+  height: 20px;
+  width: 20px;
+}
+span {
+  display: flex;
+  /* border: 1px solid ; */
+}
+span > p {
+  margin: 5px 8px;
+}
+h5 {
+  margin: auto;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 550;
+  font-size: 12px;
+  color: #4b4b4b;
+}
+i {
+  height: 20px;
+  width: 20px;
+  padding: 6px;
+  margin: 7px 0px 0px 9px;
+  background: #bababa;
+  text-align: center;
+  border-radius: 50px;
+  color: #fff;
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 390px) and (max-width: 768px) {
+}

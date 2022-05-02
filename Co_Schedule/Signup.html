@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="Styles/signup.css" />
+  </head>
+  <body>
+    <div id="signup-container">
+      <label id="signup-top">
+        <h1 class="signup-head">Create My Marketing Calendar</h1>
+        <p class="signup-para">Free for life. No credit card required.</p>
+      </label>
+
+      <div id="signup-form">
+        <label>
+          <h4>Full Name</h4>
+          <input
+            type="text"
+            id="signup-name"
+            name="name"
+            placeholder="Full name"
+          />
+        </label>
+
+        <label>
+          <h4>Email Address</h4>
+          <input
+            type="text"
+            id="signup-email"
+            placeholder="Work email address"
+          />
+        </label>
+
+        <label>
+          <h4>Company</h4>
+          <input
+            type="text"
+            name="company"
+            id="signup-company"
+            placeholder="Company Name"
+          />
+        </label>
+
+        <label>
+          <h4>Website URL</h4>
+          <input
+            type="text"
+            name="website"
+            id="signup-website"
+            placeholder="Company website URL"
+          />
+        </label>
+
+        <label>
+          <h4>Password</h4>
+          <input
+            type="password"
+            name="password"
+            id="signup-password"
+            placeholder="Password (minimum 8 characters)"
+          />
+        </label>
+
+        <button id="signup-btn">Get Started Now</button>
+
+        <p id="signin-end-p">
+          By clicking "Get Started Now", you agree to CoSchedule's
+          <a href="">
+            terms of service, end user agreement, and privacy policy;
+          </a>
+          you are 16 years or older; and you will receive information from
+          CoSchedule from which you can opt out at any time.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<script>
+
+
+let data = []
+
+let siginUp = document.getElementById("signup-btn").addEventListener("click", () => {
+
+
+    let name = document.getElementById("signup-name").value
+    let email = document.getElementById("signup-email").value
+    let company = document.getElementById("signup-company").value
+    let website = document.getElementById("signup-website").value
+    let password = document.getElementById("signup-password").value
+
+        let obj = {
+            name : name,
+            email : email,
+            company : company,
+            website : website,
+            password : password
+        }
+        data.push(obj)
+        localStorage.setItem("sign-up",JSON.stringify(data))
+})
+
+
+
+
+
+</script>
