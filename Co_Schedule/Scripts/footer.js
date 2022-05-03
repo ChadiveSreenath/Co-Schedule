@@ -10,13 +10,13 @@ function footer() {
         <div id="footer-start">
 
             <img src="https://coschedule.com/img/cos-logo-icon.svg" alt="" id="logo">
-            <a href="Signin.html">
+            <a href="Signup.html">
             <p id="footer-p">Sign Up</p>
             </a>
             <a href="requestDemo.html">
             <p id="footer-p">Request A Demo</p>
             </a>
-            <a href="Signup.html">
+            <a href="Signin.html">
             <p id="footer-p">Sign In</p>
             </a>
 

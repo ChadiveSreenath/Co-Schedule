@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"/>
+    <link rel="stylesheet" href="Styles/footer.css">
+    <style>
+        *{
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            color: #333;
+
+        }
+        #pricing-top-main{
+            height: 270px;
+            background-color: #f8f8f8;
+        }   
+        #pricing-logo{
+            height: 70px;
+            width: 210px;
+            padding: 0px 15px;
+            margin-left: 39%; 
+        }    
+        #pricing-top-main h1{
+            height: 80px;
+            width: 700px;
+            text-align: center;
+            margin-left: 25%;
+            color: #4b4b4b;
+        }
+        #pricing-top-main p{
+            height: 27px;
+            text-align: center;
+            color: #4b4b4b;
+        }
+
+        /* pricing items styling comes here  */
+
+        #pricing-items{
+            height: 1100px;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: space-evenly;
+            /* border: 1px solid red; */
+            padding: 0px 150px;
+        }
+        #pricing-free{
+            height: 700px;
+            width: 350px;
+            border: 1px solid #e9e9e9;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+        #pricing-pro{
+            height: 870px;
+            width: 350px;
+            border: 1px solid #e9e9e9;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+        #pricing-business{
+            height: 1050px;
+            width: 350px;
+            border: 1px solid #e9e9e9;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+        .pricing-free-header h3 {
+        font-weight: 570;
+        font-size: 17px;
+        color: #4b4b4b;
+        text-align: center;
+        }
+        .pricing-free-header div {
+        font-weight: 570;
+        font-size: 48px;
+        color: #4b4b4b;
+        text-align: center;
+        }
+        .pricing-free-header p{
+            font-size: 13px;
+            line-height: 140%;
+            color: #787878;
+            padding: 0px 60px;
+            text-align: center;
+        }
+        .price{
+            height: 140px;
+            font-size: 40px;
+            line-height: 1px;
+            text-align: center;
+            padding: 20px 0px;
+        }
+        .price div{
+            font-size: 17px;
+        }
+        #pricing-button {
+        height: 50px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        background-color: #f37e5d;
+        color: #fff;
+        font-size: 14px;
+        width: 220px;
+        padding: 15px 0px;
+        border-radius: 3px;
+        margin-left: 17%;  
+        }
+        #pricing-list{
+            margin-top: 50px;
+        }
+        #check-icon {
+        height: 13px;
+        width: 13px;
+        padding: 4px;
+        }
+
+       #pricing-list ul span{
+            display: flex;
+        }
+        #pricing-list ul li{
+            line-height: 30px;
+        }
+        #pricing-features{
+            font-size:13px;
+            opacity: 0.5;
+            text-decoration: underline;
+            margin-left: 30%;
+        }
+        #top{
+            position: absolute;
+            margin-left: 270PX;
+            bottom: 380px;
+        }
+        #free-logo{
+            height: 120px;
+            width: 120px;
+        }
+        #contact-sales-button{
+            height: 50px;
+        text-align: center #f37e5d;
+        border: 2px solid ;
+        cursor: pointer;
+        color: #f37e5d;
+        background-color: #fff;
+        font-size: 14px;
+        width: 220px;
+        padding: 15px 0px;
+        border-radius: 3px;
+        margin-left: 17%; 
+        }   
+        #pricing-business-text-li{
+            text-align: center;
+            font-size: 13px;
+            line-height: 140%;
+            color: #787878;
+            padding: 15px 50px;
+        }
+        #coschedule-moria{
+            height: 290px;
+            width: 100%;
+        }
+        #coschedule-moria div{
+            height: 200px;
+            width: 500px;
+            margin: auto;
+            margin-top: 70px;
+            
+        }
+        .quote{
+            font-family: "Merriweather",serif;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 19px;
+            line-height: 170%;
+            text-align: center;
+        }
+
+        #moria-img{
+            height: 55px;
+            width: 55px;
+            border-radius: 50px;
+            margin-top: 15px;
+        }
+        #coschedule-moria div div{
+            display: flex;
+            line-height: 30px;
+            width: 250px;
+            height: 90px;
+            gap: 20px;
+            
+            
+        }
+        #coschedule-moria div div p{
+            font-size:14px;
+            color: #a5a5a5;
+        }
+        #faq-container{
+            height: 750px;
+            width: 100%;
+            display: grid;
+            grid-gap: 0px;
+
+        }
+        #faq-cont-one{
+            height: 280px;
+            width: 75%;
+            margin: auto;
+            padding: 0px 50px;
+            display:flex;
+        }
+        #faq-cont-two{
+            height: 280px;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            padding: 0px 50px;
+            display: flex;
+        }
+        #faq-heading{
+            font-size: 40px;
+            text-align: center;
+            margin: auto;
+        }
+        hr{
+            width: 130px;
+            border: 0;
+            border-top: 4px solid #e9e9e9;
+            margin: 15px auto;
+        }
+        #faq-cont-one div{
+            height: 270px;
+            width: 27%;
+            margin: auto;
+            text-align: start;
+        }
+        #faq-cont-two div{
+            height: 270px;
+            width: 27%;
+            margin: auto;
+            text-align: start;
+            margin-bottom: 30px;
+        }
+        #faq-div h3{
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 550;
+            color: #4b4b4b;
+            font-size: 17px;
+            line-height: 29px;
+            opacity: 0.9;
+
+        }
+         #faq-div p{
+            font-family: "MuseoSans-300",sans-serif;
+            font-size: 15px;
+            color: #4b4b4b;
+            line-height: 170%;
+            margin: 0 0 10px;
+         }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="pricing-top-main"> 
+        <img src="https://coschedule.com/img/cos-logo-full-color.svg" alt="" id="pricing-logo">
+        <h1>Organize Your Marketing With Content Calendar Software by&nbsp;CoSchedule</h1>
+        <p>Try it free. No credit card&nbsp;required.</p>
+    </div>
+
+    <!-- prices of the coSchedule comes here  -->
+    <div id="pricing-items">
+
+        <div id="pricing-free">
+            <div id="top">
+        <img src="https://coschedule.com/img/pricing/mc-free-badge-01.png" alt="" id="free-logo">
+            </div>
+            <div class="pricing-free-header">
+                <h3>Marketing Calendar</h3>
+                <div>Free</div>
+                <p>The forever-free marketing calendar to see everything in one place.</p>
+            </div>
+
+            <div class="price">
+                <h2>$0</h2>
+                <div>Free Forever</div>
+            </div>
+
+            <button id="pricing-button">GET STARTED FOR FREE</button>
+            <div id="pricing-list">
+                <ul>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Personal Project &amp; Task Management</li>
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                    <li>Unlimited Marketing Projects and content</li>
+                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                    <li>Marketing &amp; Project Management Integrations</li>
+                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Social Media Publishing</li>
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Self-Serve Knowledge Base</li>
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Basic Support</li>
+                    </span>                   
+                </ul>
+            </div>
+            <p id="pricing-features"> see all features</p>
+        </div>
+
+        <div id="pricing-pro">
+            
+
+            <div class="pricing-free-header">
+                <h3>Marketing Calendar</h3>
+                <div>Pro</div>
+                <p>The advanced marketing calendar with limitless publishing to gain even more control.</p>
+            </div>
+
+            <div class="price">
+                <h2>$29</h2>
+                <div>per user/month</div>
+            </div>
+
+            <button id="pricing-button">GET STARTED FOR FREE</button>
+            <div id="pricing-list">
+                <ul>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Real-Time Marketing Calendar</li>
+                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Unlimited Read-Only Observer Calendar Views</li>
+                        
+                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+            <li>Simultaneous Team Member Access &amp; Collaboration</li>
+                   
+                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+            <li>Customizable Task Workflow Templates</li>
+                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Unlimited Social Media Publishing
+                            <span class="icon-twitter2"></span>
+                            <span class="icon-instagram"></span>
+                            <span class="icon-facebook2"></span>
+                            <span class="icon-linkedin2"></span>
+                            <span class="icon-pinterest"></span>
+                        </li>
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Bulk Social Media Scheduling</li>
+
+                    </span>  
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Social Media Automation &amp; Campaign Templates</li>
+
+
+                    </span> 
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Priority Support</li>
+                 </span>                  
+                </ul>
+            </div>
+            <p id="pricing-features"> see all features</p>
+
+        </div>
+
+        <div id="pricing-business">
+            <div class="pricing-free-header">
+                <h3>Marketing Suite</h3>
+                <div>Business</div>
+                <p>A family of agile marketing products to complete more work and prove your team’s value.</p>
+            </div>
+
+            <div class="price">
+                <h2>Let's Talk </h2>
+                
+            </div>
+
+            <button id="contact-sales-button">Contact Sales</button>
+            <p id="pricing-business-text-li">Includes all Marketing Calendar Pro capabilities, plus:</p>
+            <div id="pricing-list">
+                <ul>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Calendar Team Filtering</li>                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Marketing Request Management</li>
+                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+    <li>Multi-Channel Campaigns</li>
+                        
+                   
+                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+    <li>Single Sign-On &amp; Security</li>
+            
+                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+    <li>Custom User Access &amp; Permissions</li>
+                        
+                    </span>
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+    <li>Automatic Marketing Campaigns</li>
+                        
+
+                    </span>  
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+    <li>Custom Project Templates</li>
+                        
+
+
+                    </span> 
+                    <span>
+                        <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                        <li>Workflow Automation &amp; Bottleneck Mitigation</li>
+
+                 </span>    
+
+                 <span>
+                    <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                    <li>Asset &amp; File Management Storage</li>
+                 </span> 
+
+                <span>
+                <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+    <li>File Sharing Enablement</li>
+
+                 </span>              
+                 <span>
+                    <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+    <li>Detailed Project, Work, &amp; Team Analytics</li>
+
+                </span> 
+                <span>
+                <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                <li>Team Performance Reporting</li>
+
+                </span> 
+                <span>
+                    <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                    <li>Advanced Premium Integrations</li>
+
+    
+                </span> 
+                <span>
+                    <img src="https://www.kindpng.com/picc/m/444-4445206_orange-check-mark-png-transparent-png.png" alt="" id="check-icon">
+                    <li>1:1 Customer Success Management</li>
+
+    
+                </span> 
+
+                </ul>
+            </div>
+            <p id="pricing-features"> see all features</p>
+        </div>
+
+    </div>
+    
+    <div id="coschedule-moria">
+        <div>
+            <h3 class="quote">"CoSchedule helps me easily see what’s on each person’s plate and
+                 shift or re-prioritize workloads when necessary."</h3>
+            <div>
+                <img src="https://coschedule.com/img/testimonials/moria-fredrickson-blue-medora.jpg" alt="" id="moria-img">
+                <p>Moria Fredrickson,<br>Blue Medora</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="faq-container">
+        <h2 id="faq-heading">FAQs</h2>
+        <hr>
+        <div id="faq-cont-one">
+            <div id="faq-div">
+                <h3>I’m just getting started. How can I learn more about CoSchedule?</h3>
+                <p>You can start right here by digging into our Getting Started page or checking out onboarding videos in the </p>
+            </div>
+            <div id="faq-div">
+                <h3>How do I upgrade from a Free to a Pro plan?</h3>
+                <p>It’s easy! Just visit the billing page in your account. There you can select a new plan. Once you complete the billing prompts, your account will automatically upgrade to&nbsp;Pro.</p>
+            </div>
+            <div id="faq-div">
+                <h3>How do I get started with Marketing&nbsp;Suite?</h3>
+                <p>Click here to receive a demo of the CoSchedule Marketing Suite. You'll learn how it can help you coordinate your team, projects, and&nbsp;process.</p>
+            </div>
+        </div>
+
+        <div id="faq-cont-two">
+
+            <div id="faq-div">
+                <h3>Which payment types do you&nbsp;accept?</h3>
+                <p>Plastic is fantastic. We accept credit card payments for all of our paid plans.
+                     (Credit cards are not required for Marketing Calendar Free.) We may also accept other payment types
+                      for Marketing Suite. Check with your account executive for details. For more information on billing, 
+                      visit our Billing FAQs support&nbsp;doc.</p>
+            </div>
+            <div id="faq-div">
+                <h3>Do you offer discounts for&nbsp;nonprofits?</h3>
+                <p>To make it easier for your nonprofit to organize all of your marketing with CoSchedule,
+                     we offer a 30% discount on all of our paid plans. 
+                      to learn&nbsp;more.</p>
+            </div>
+            <div id="faq-div">
+                <h3>Where can I find other helpful resources?</h3>
+                <p>Our CoSchedule Guides will show you how to get totally organized in CoSchedule. And the 
+                    Actionable Marketing Institute is chock full of video gold to help you maximize your&nbsp;marketing.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer_cont">
+
+
+    </div>
+    
+</body>
+</html>
+
+<script type="module">
+
+import {footer} from "./Scripts/footer.js"
+     
+     let footer_cont = document.getElementById("footer_cont")
+     footer_cont.innerHTML = footer()
+
+</script>
