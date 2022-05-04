@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <style>
+       
+        #notification-bar{
+            height: 450px;
+            width: 290px;
+            /* background-color: #ffffff; */
+            margin:auto;
+            border: 1px solid #eee;
+        }
+        #hr{ 
+           border: 0.1px solid #666;
+        }
+        #notification-bar-buttons{
+            height: 30px;
+            width: 290px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+             cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            border: 0;
+            padding: 15px 10px;
+            box-sizing: border-box;
+
+        }
+        #notification-bar-buttons span:hover{
+            color: #d17760;
+        }
+        #down-notifications{
+            height: 400px;
+            display:none;
+
+        }
+        #down-notifications img{
+                height: 160px;
+                width: 110px;
+                padding: 60px;
+                margin-left: 40px;
+        }   
+        #down-notifications div{
+            font-size: 24.5px;
+            line-height: 20px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            text-align: center; 
+        }
+        #down-notifications h5{
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin-top: 10px;
+            text-align: center; 
+        }
+        #recent-notifications{
+            display: none;
+            width: 100%;
+            box-sizing: border-box;
+            flex-flow: column;
+            border-radius: 4px 4px 0 0;
+            max-height: calc(100% - 51px);
+        }
+        #notification-img{
+            width: 200px;
+            height: 70px;
+            border-radius: 6px;
+            padding: 0px 20px;
+            margin-left :11%;
+            margin-top: 70px;
+        }
+        .para{
+            font-weight: 700;
+            text-align: center;
+            color: #999;
+            margin: 50px 15px;
+            font-size: 13px;
+
+        }
+        #favourite-notifications{
+            display:none;
+        }
+        #favourite-notifications :focus{
+            color: #d17760;
+        }
+        .fav-img{
+            width: 200px;
+            height: 100px;
+            font-weight: 600;
+            border-radius: 6px;
+            padding: 0px 20px;
+            margin-left :11%;
+            margin-top: 70px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div id="notification-bar">
+
+        <div id="notification-bar-buttons">
+            <span id="notifications" onclick="notification();">
+                Notifications</span>
+            <span id="recent" onclick="recent()">
+                Recent
+            </span>
+            <span id="favourites" onclick="favourites();">
+                Favourites
+            </span>
+        </div>
+        <hr id="hr">
+        <div id="hidden-content">
+
+            <div id="down-notifications">
+                <img src="https://app.coschedule.com/img/notifications-empty-1888c22fd951298ea32d6524dcd478f6.png" alt="">
+                <div>All caught up!</div>
+                <h5>No new notifications</h5>
+            </div>
+            <div id="recent-notifications" >
+                <img id="notification-img" src='https://www.linkpicture.com/q/Screenshot_2022-05-04-11-09-08-57_40deb401b9ffe8e1df2f1cc5ba480b12.jpg'>
+                <p class="para">Projects and campaigns that you have recently <br> visited will appear here.</p>
+            </div>
+            <div id="favourite-notifications">
+                <img class="fav-img" src='https://www.linkpicture.com/q/Screenshot_2022-05-04-11-09-23-28_40deb401b9ffe8e1df2f1cc5ba480b12.jpg' alt="">
+                <p class="para">Favorite projects and campaigns that you work on frequently and they will appear here.</p>
+            </div>
+
+        </div>
+    </div>  
+    
+
+
+</body>
+</html>
+
+<script>
+    let hidden =document.getElementById("hidden-content");
+    function notification(){
+
+        let down = document.querySelector("#down-notifications");
+        down.style.display="grid"
+    }
+    function recent(){
+        let recent = document.querySelector("#recent-notifications");
+        recent.style.display="flex"
+        
+    }
+    function favourites(){
+        let favouritesDiv = document.querySelector("#favourite-notifications");
+        favouritesDiv.style.display="grid"
+        
+    }
+
+</script>
