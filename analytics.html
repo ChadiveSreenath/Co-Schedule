@@ -1,200 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics</title>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <link rel="stylesheet" href="Co_Schedule/Styles/calender.css" />
+    <link rel="stylesheet" href="Co_Schedule/Styles/analytics.css" />
+  </head>
+  <body>
+    <div id="main-analytics-page">
+      <div id="sidebar" style="height: 700px">
+        <div id="top-side-bar" style="display: grid">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-calendar"></i>
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-signal"></i>
+          <img
+            style="height: 13px; width: 17px; margin: auto"
+            class="badge-image"
+            src="https://app.coschedule.com/img/downgrade/banner-7a6c6a653a0ba9fcfb4d6475f9ce7441.svg"
+            alt="Badge with star"
+          />
+        </div>
+        <div id="lower-side-bar" style="display: grid">
+          <i class="fa-solid fa-gear"></i>
+          <i class="fa-solid fa-circle-question"></i>
+        </div>
+      </div>
 
-    <style>
-        *{
-            font-family: "MuseoSans-500","Helvetica Neue",Helvetica,Arial,sans-serif;
-        }
-        #analytics{
-            height: 600px;
-            width: 93%;
-            margin-left: 6%;
-            margin-top:4%;
-        }
-        #analytics-top{
-            height: 250px;
-            width: 99%;
-            display: flex;
-        }
-        #analytics-down{
-            height: 200px;
-            width: 99%;
-        }
-        .social-engagement{
-            width: 235px;
-            height: 235px;
-            margin: auto;
-            background-color: #fff;
-            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 25%);
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        .social-engagement-down{
-            width: 235px;
-            height: 235px;
-            margin-left: 20px;
-            margin-top: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 25%);
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        .social-engagement-down:hover{
-        box-shadow: 0 4px 15px -1px rgb(0 0 0 / 35%);
-        }
-        .social-engagement:hover{
-        box-shadow: 0 4px 15px -1px rgb(0 0 0 / 35%);
-        }
-        #icon-social-engagement{
-            background-color: #3c73ae;
-            width: 235px;
-            height: 60px;
-            color: #fff;   
-        }
-        i{
-            margin-top: 20px;
-            margin-left: 100px;
-            font-size: x-large
-        }
-        #second{
-            font-size: 17px;
-            font-family:" MuseoSans-700","Helvetica Neue",Helvetica,Arial,sans-serif;
-            margin: 15px 18px 0;
-            color: #666;
-            font-weight: 550;
-        }
-        .small-description{
-            font-size: 13px;
-            line-height: 1.5;
-            margin: 12px 18px 10px;
-            text-align: start;
-            color: #666;
-        }
-        .social-top{
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .social-top div {
-            font-size: 25px;
-            font-weight:540;
-            line-height: 40px;
-            color: #666;
-        }
-        .social-top p {
-            font-size: 14px;
-            font-weight:500;
+      <div id="left-analytics-page" style="display: grid">
+        <div class="top-nav">
+          <div class="left-top-nav">
+            <span style="display: flex">
+              <i class="fa-light fa-signal"></i>
+              <div>&nbsp; Analytics</div>
+            </span>
+          </div>
 
-        }
+          <div class="right-top-nav">
+            <span>
+              <i class="fa-solid fa-trophy"></i>
+              <i class="fa-solid fa-bell"></i>
+            </span>
+          </div>
+        </div>
 
-    </style>
-</head>
-<body>
-    <div id="analytics">
-        <div class="social-top">
-
+        <div id="analytics">
+          <div class="social-top">
             <div>Social Analytics</div>
             <p>Get help with analytics</p>
-        </div>
-        <div id="analytics-top">
+          </div>
 
-            <div class="social-engagement" >
-                <div id="icon-social-engagement">
-                    <i class="fa-solid fa-chart-simple"></i>
-                </div>
-
-                <div>
-                        <div id="second">Social Engagment</div>
-                         <p class="small-description">Understand your
-                        engagement on social media. Spot trends and understand what your audience likes now to act quickly!
-                        </p>
-                </div>
-                    
-            </div>
-    
+          <div id="analytics-top">
             <div class="social-engagement">
-                
-                <div id="icon-social-engagement" style="background-color: #81bc7b;">
-                    <i class="fa-solid fa-bullhorn"></i>
-                </div>
-                <div>
-                    <div id="second">Social Campaign</div>
-                    <p class="small-description">Gauge the success of your social campaigns. Evaluate performance in one place +
-                        pinpoint correlations between campaigns with side-by-side comparisons.
-                      </p>
-                </div>
-    
+              <div id="icon-social-engagement">
+                <i
+                  id="social-icon-analytics"
+                  class="fa-solid fa-chart-simple"
+                ></i>
+              </div>
+
+              <div>
+                <div id="second">Social Engagment</div>
+                <p class="small-description">
+                  Understand your engagement on social media. Spot trends and
+                  understand what your audience likes now to act quickly!
+                </p>
+              </div>
             </div>
-    
+
             <div class="social-engagement">
-
-               <div id="icon-social-engagement" style="background-color: #3b5998;;">
-                <i class="fa-brands fa-facebook-f"></i>
-               </div>
-
-               <div>
-                   <div id="second">Facebook Report</div>
-                   <p class="small-description">Get comprehensive Facebook data. Track, measure and analyze page performance
-                    including page growth, total impressions and more.</p>
-               </div>
-
-                
+              <div
+                id="icon-social-engagement"
+                style="background-color: #81bc7b"
+              >
+                <i id="social-icon-analytics" class="fa-solid fa-bullhorn"></i>
+              </div>
+              <div>
+                <div id="second">Social Campaign</div>
+                <p class="small-description">
+                  Gauge the success of your social campaigns. Evaluate
+                  performance in one place + pinpoint correlations between
+                  campaigns with side-by-side comparisons.
+                </p>
+              </div>
             </div>
-    
+
             <div class="social-engagement">
-                
-                <div id="icon-social-engagement" style="background-color: #2ca9e1;;">
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
-                <div>
-                    <div id="second">
-                        Twitter Report
-                    </div>
-                    <p class="small-description">Understand the impact of your Twitter profile. Access and evaluate data
-                        including audience growth + engagement stats.</p>
-                </div>
+              <div
+                id="icon-social-engagement"
+                style="background-color: #3b5998 ;"
+              >
+                <i
+                  id="social-icon-analytics"
+                  class="fa-brands fa-facebook-f"
+                ></i>
+              </div>
+
+              <div>
+                <div id="second">Facebook Report</div>
+                <p class="small-description">
+                  Get comprehensive Facebook data. Track, measure and analyze
+                  page performance including page growth, total impressions and
+                  more.
+                </p>
+              </div>
             </div>
-    
+
             <div class="social-engagement">
-                <div id="icon-social-engagement" style="background-color:  #0073a5;">
-                    <i class="fa-brands fa-linkedin"></i>
-                </div>
-                <div>
-                    <div id="second">Instagram Report</div>
-                    <p class="small-description">Make sense of your Instagram account. And better understand which posts,
-                      hashtags and content types reach your audience.</p>
-                </div>
-                
+              <div
+                id="icon-social-engagement"
+                style="background-color: #2ca9e1 ;"
+              >
+                <i id="social-icon-analytics" class="fa-brands fa-twitter"></i>
+              </div>
+              <div>
+                <div id="second">Twitter Report</div>
+                <p class="small-description">
+                  Understand the impact of your Twitter profile. Access and
+                  evaluate data including audience growth + engagement stats.
+                </p>
+              </div>
             </div>
 
-        </div>
+            <div class="social-engagement">
+              <div
+                id="icon-social-engagement"
+                style="background-color: #0073a5"
+              >
+                <i id="social-icon-analytics" class="fa-brands fa-linkedin"></i>
+              </div>
+              <div>
+                <div id="second">Instagram Report</div>
+                <p class="small-description">
+                  Make sense of your Instagram account. And better understand
+                  which posts, hashtags and content types reach your audience.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <div id="analytics-down">
-
+          <div id="analytics-down">
             <div class="social-engagement-down">
-                <div id="icon-social-engagement" style="background-color: #e34061;;">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div>
-                    <div id="second">Instagram Report</div>
-                    <p class="small-description">Make sense of your Instagram account. And better understand which posts,
-                      hashtags and content types reach your audience.</p>
-                </div>
-    
+              <div
+                id="icon-social-engagement"
+                style="background-color: #e34061 ;"
+              >
+                <i
+                  id="social-icon-analytics"
+                  class="fa-brands fa-instagram"
+                ></i>
+              </div>
+              <div>
+                <div id="second">Instagram Report</div>
+                <p class="small-description">
+                  Make sense of your Instagram account. And better understand
+                  which posts, hashtags and content types reach your audience.
+                </p>
+              </div>
             </div>
-            
-
-
+          </div>
         </div>
-
-
+      </div>
     </div>
-</body>
+  </body>
 </html>
-

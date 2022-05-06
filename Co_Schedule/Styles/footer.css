@@ -6,7 +6,9 @@ a{
 }
 #footer {
   height: 540px;
-  margin: auto;
+  /* margin: auto; */
+  /* margin-top: 20px; */
+  /* margin-bottom: 0px; */
   background-color: #f8f8f8;
 }
 #inner-container {
@@ -22,7 +24,7 @@ a{
   grid-gap: 2.5%;
   grid-template-rows: repeat(2, 210px);
   margin: auto;
-  padding: 40px;
+  padding: 40px 40px 0 40px;
 }
 #footer-start {
   grid-area: a;

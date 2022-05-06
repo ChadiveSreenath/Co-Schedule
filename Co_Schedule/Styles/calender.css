@@ -1,0 +1,238 @@
+
+body {
+    margin: 0;
+}
+#calendar-total-div{
+height: auto;
+display: grid;
+width: 100.2%;
+overflow: hidden;
+
+box-shadow: 0 1px 12px -3px rgb(0 0 0 / 40%);
+position: relative;
+border-radius: 10px 10px 0 0;
+
+}
+
+#app-calendar{
+display: grid;
+grid-template-columns: repeat(7,1fr);
+
+}
+.total{
+height: 150px;
+border: 1px dotted #ccc;
+font-size: 13px;
+padding: 10px 8px 1px;
+padding-top: 0px;
+background-color: #fff;
+cursor: pointer;
+text-transform: uppercase;
+}
+.name{
+/* padding: 5px; */
+line-height: 19px;
+font-size: 13px;
+font-weight: 400;
+color: #999;
+}
+#icon-plus{
+height: 200px;
+width: 180px;
+padding: 0 18px;
+position: absolute;
+min-width: 20px;
+box-shadow: 0 2px 35px -3px rgb(0 0 0 / 40%);
+}
+.create-new{
+font-size: 14px;
+line-height: 28px;
+font-weight: 400;
+font-style: normal;
+font-family:" MuseoSans-500","Helvetica Neue",Helvetica,Arial,sans-serif;
+margin-top: 14px;
+text-align: center;
+border-bottom: 1px dotted #000;
+
+}
+.projects{
+height: 10px;
+text-align: start;
+padding: 22px;
+font-size: 17px;
+line-height: 20px;
+font-weight: 400;
+color: #4d4d4d;
+cursor: pointer;
+
+}
+.more-options{
+margin-top: 10px;
+border-top: 1px dotted #000;
+height: 15px;
+padding: 9px;
+cursor: pointer;
+
+}
+.more-options:hover{
+color: #4d4d4d;
+}
+
+
+#rightSignIn {
+position: relative;
+display: inline-block;
+}
+
+#fafa-icon{
+font-size: 18px;
+display: none;
+position: absolute;
+cursor: pointer;
+}
+
+.icon-align {
+margin-top: 3px;
+}
+
+#rightSignIn:hover #fafa-icon {
+display: block;
+
+}
+#plus-btn{
+margin-left: 159px;
+background-color: transparent;
+padding: 10px;
+border: none;
+
+}
+
+#icon-plus{
+display: none;
+}
+#top-calender-bar{
+height: 45px;
+width: 100%;
+display: flex;
+}
+.icon-top-calender{
+height: 32px;
+width: 20%;
+display: flex;
+/* border: 1px solid red; */
+justify-content: space-around;
+padding: 6px;
+}
+#create-button{
+color: #fff;
+background: linear-gradient(to right,#d17760,#bc6148 140%);
+height: 30px;
+width: 78px;
+text-align: center;
+border-radius: 6px;
+padding: 0px 10px;
+}
+#search-icon {
+font-size: 20px;
+margin-top: 6px;
+
+}
+#ideas-btn{
+color: #4d4d4d;
+background-color: #f7f7f7;
+cursor: pointer;
+font-size: 13px;
+line-height: 20px;
+font-weight: 400;
+font-family:" MuseoSans-500","Helvetica Neue",Helvetica,Arial,sans-serif;
+margin: 0 0 0 8px;
+padding: 0 19px;
+display: flex;
+align-items: center;
+border-radius: 6px;
+border: 1px solid #e6e6e6;
+}
+.date{
+width: 18%;
+height: 32px;
+justify-content: space-around;
+font-size: 18px;
+margin: auto;
+display: flex;
+text-align: center;
+color: #666;
+align-items: center;
+margin-left: 45%;
+}
+
+.top-nav{
+height: 46px;
+background-color: #f7f7f7;
+width: 99.5%;
+display: flex;
+justify-content: space-between;
+position: relative;
+padding: 8px 10px 0 0;
+z-index: 1980;
+}
+.left-top-nav{
+height: 50px;
+width: 340px;
+display: flex;
+
+justify-content: space-between;
+padding: 0px 15px;
+
+}
+.right-top-nav{
+height: 42px;
+width: 90px;
+
+}
+span i{
+ margin-top: 15px;
+margin-right:20px;
+font-size: 19px;
+}
+span div{
+margin-top: 12px;
+font-size: 20px;
+text-overflow: ellipsis;
+white-space: nowrap;
+color: #4d4d4d;
+transition: all .2s ease;
+}
+#sidebar{
+height:865px;
+width:4%;
+display: grid;
+grid-gap: 31%;
+background-color: #f7f7f7;
+
+}
+#top-side-bar{  
+height: 350px;
+width: 96%;
+font-size:20px ;
+background-color: #f7f7f7;
+text-align: center;
+margin-top: 15px;
+}
+#lower-side-bar{
+height: 150px;
+width: 96%;
+font-size: 20px;
+background-color: #f7f7f7;  
+text-align: center; 
+
+}
+#calender-bar{
+    height: 730px;
+    width: 100%;
+    display: flex;
+}
+#right-calender-bar{
+height: 730px;
+width: 99.5%;
+}
+

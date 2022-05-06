@@ -53,7 +53,7 @@ export {topSide}
 
 
 
-const sideBar = ()=> {
+const sidebar = ()=> {
 
 
     return `
@@ -75,4 +75,4 @@ const sideBar = ()=> {
     `
 }
 
-export {sideBar}
+export {sidebar}

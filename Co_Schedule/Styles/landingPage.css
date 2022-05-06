@@ -1,5 +1,8 @@
 /* styling of the request a demo  */
-
+ body{
+   margin: 0;
+   padding: 0;
+ }
 #organise-request {
   height: 230px;
   background: linear-gradient(90deg, #f37e5d 0, #f9a97d);

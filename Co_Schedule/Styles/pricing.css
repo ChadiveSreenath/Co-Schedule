@@ -2,6 +2,9 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
+body{
+  margin: 0;
+}
 #pricing-top-main {
   height: 270px;
   background-color: #f8f8f8;
