@@ -10,12 +10,12 @@
 }
 #left-bar {
   height:60px;
-  width:43%;
+  width:46%;
   display:flex;
 }
 #right-bar {
   height:60px;
-  width:25%;
+  width:28%;
   display:flex;
 }
 #navbar-logo{
@@ -41,11 +41,12 @@
    font-weight: 550;
     color: #2f2f2f;
     /* border:1px solid  red; */
-    font-family: MuseoSans-700, sans-serif;
+  font-family: MuseoSans-700, sans-serif;
   font-size: 14.5px;
   cursor: pointer;
   margin: auto;
   margin-top: 30px;
+  margin-left: 15px;
  }
  #navbar-head:hover{
   color: #f37e5d;

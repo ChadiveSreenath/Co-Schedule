@@ -1,17 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"/>
-    <link rel="stylesheet" href="Styles/footer.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calender</title>
+  <link  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"/>
 
-  </head>
-  <body>
+  <style>
 
-  </body>
+    #app-calendar{
+      width: 85%;
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+      margin-left: 13%;
+      margin-top: 50px;
+
+    }
+    .total{
+      height: 150px;
+      border: 1px dotted #ccc;
+      text-align: center;
+      font-size: 10px;
+      padding: 10px 8px 1px;
+      background-color: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    .name{
+      padding: 5px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #999;
+    }
+    #icon-plus{
+      height: 200px;
+      width: 180px;
+      padding: 0 18px;
+      position: absolute;
+      min-width: 20px;
+      box-shadow: 0 2px 35px -3px rgb(0 0 0 / 40%);
+    }
+    .create-new{
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    font-style: normal;
+    font-family:" MuseoSans-500","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 14px;
+    text-align: center;
+    border-bottom: 1px dotted #000;
+
+    }
+    .projects{
+      height: 10px;
+      text-align: start;
+      padding: 22px;
+      font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #4d4d4d;
+    cursor: pointer;
+
+    }
+    .more-options{
+      margin-top: 10px;
+       border-top: 1px dotted #000;
+      height: 15px;
+      padding: 9px;
+    cursor: pointer;
+
+    }
+    .more-options:hover{
+      color: #4d4d4d;
+    }
+    
+
+  #rightSignIn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #fafa-icon{
+    font-size: 18px;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .icon-align {
+    margin-top: 3px;
+  }
+  
+  #rightSignIn:hover #fafa-icon {
+    display: block;
+
+  }
+  #plus-btn{
+    margin-left: 135px;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    
+  }
+     
+  #icon-plus{
+    display: none;
+  }
+  #top-calender-bar{
+    height: 45px;
+    width: 85%;
+    border: 1px solid black;
+  }
+  .icon-top-calender{
+  height: 32px;
+  width: 25%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 75%;
+}
+  #create-button{
+    color: #fff;
+    background: linear-gradient(to right,#d17760,#bc6148 140%);
+    height: 32px;
+    width: 78px;
+    align-items: center;
+    text-align: center;
+    border-radius: 6px;
+  }
+
+  </style>
+
+
+
+</head>
+<body>
+  
+
+  <div id="top-calender-bar">
+
+    <div id="col-top-calender">
+        <div class="date">
+
+        </div>
+        <div class="icon-top-calender">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div id="create-button">
+            <i class="fa-solid fa-plus" style="margin-top:7px"></i>
+            <span>Create</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>Ideas</span>
+          </div>
+
+        </div>
+    </div>
+
+  </div>
+
+  <div id="app-calendar">
+
+
+  </div>
+
+
+
+  <div id="icon-plus">
+      <div class="create-new">
+        CREATE NEW
+      </div>  
+      
+      <div class="projects">
+        <i class="fa-solid fa-file-chart-column"></i>
+        <span style="margin-left: 10px;">Project</span>
+      </div>
+
+      <div class="projects">
+        <i class="fa-solid fa-comment"></i>
+        <span style="margin-left: 10px;">Social</span>
+      </div>
+      <!-- <hr style="border: 0.1px solid "> -->
+      <div class="more-options">
+        <span>More Options</span>
+      </div>
+
+  </div>
+
+
+
+</body>
 </html>
+
+<script>
+
+  let calendar = document.getElementById("app-calendar")
+
+
+  for(var day = 1; day<=31 ;day++){
+
+    const date = new Date(Date.UTC(2018,0,day));
+
+  const options = { weekday: "long" };
+
+
+    let name = ""
+    if(day<=7)
+    {
+         const dayName = new Intl.DateTimeFormat("en-US", options).format(date);
+         name = `<div class="name">${dayName}</div> `
+      
+    }
+
+    let icon = `
+
+              <div id="rightSignIn"> 
+                  <div class="icon-align"></div>
+                  <button id="plus-btn" class="btn-plus-s">  <i id="fafa-icon" class="fa-solid fa-plus"> </i> </button>
+              </div>  
+                `
+    
+    calendar.insertAdjacentHTML("beforeend",
+    `
+      <div class="total"> ${icon}<br> ${name} ${day} </div>
+      `)
+
+
+   
+  }
+  
+  let plusIcon = document.getElementById('icon-plus')
+  let btn = document.querySelector('.btn-plus-s')
+  btn.addEventListener("click",()=>{
+
+    plusIcon.style.display="block"
+    
+  })
+
+    
+
+
+
+</script>
 
 

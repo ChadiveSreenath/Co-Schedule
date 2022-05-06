@@ -25,19 +25,19 @@ function footer() {
         <div id="products">
             <h5>PRODUCTS</h5>
             <span>
-                <img src="https://coschedule.com/img/product/coschedule-marketing-calendar-product-icon.svg" alt="" id="icon">
+                <img src="https://coschedule.com/img/product/coschedule-marketing-calendar-product-icon.svg" alt="" id="icon-foot">
                 <p id="footer-p">Marketing Calender</p>
             </span>
             <span>
-                <img src="https://coschedule.com/img/product/coschedule-suite-product-icon.svg" alt="" id="icon">
+                <img src="https://coschedule.com/img/product/coschedule-suite-product-icon.svg" alt="" id="icon-foot">
                 <p id="footer-p">Marketing Suite</p>
             </span>
             <span>
-                <img src="https://coschedule.com/img/headline-studio/hs-icon-blue.svg" alt="" id="icon">
+                <img src="https://coschedule.com/img/headline-studio/hs-icon-blue.svg" alt="" id="icon-foot">
                 <p id="footer-p">Headline Studio</p> 
             </span>
             <span>
-                <img src="https://coschedule.com/img/academy/ami-logo-color.svg" alt="" id="icon">
+                <img src="https://coschedule.com/img/academy/ami-logo-color.svg" alt="" id="icon-foot">
                 <p id="footer-p">Actionable Marketing Institute</p>
             </span>
 
@@ -65,7 +65,7 @@ function footer() {
         </div>
 
 
-        <div id="resources">
+        <div id="resources-foot">
             
             <h5>RESOURCES</h5>
             <p id="footer-p">CoSchedule Marketing Blog</p>

@@ -9,17 +9,109 @@
     <link rel="stylesheet" href="Styles/footer.css">
     <link rel="stylesheet" href="Styles/navbar.css">
     <link rel="stylesheet" href="Styles/landingPage.css">
+    <link rel="stylesheet" href="Styles/hovering.css">
+
+    <style>
+
+#rightSignIn {
+    position: relative;
+    display: inline-block;
+  }
+  
+#hover-p {
+    display: none;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -140px;
+    
+  }
+  
+  #rightSignIn:hover #hover-p {
+    display: block;
+
+  }
+
+
+.why-coschedule-hover{
+    display: none;
+    position: absolute;
+    margin-top: 15px;
+}
+
+  #rightSignIn:hover .why-coschedule-hover{
+    display: block;
+  }
+
+.resources-hover{
+    display: none;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -140px;
+  }
+  #rightSignIn:hover .resources-hover{
+    display: block;
+  }
+
+    </style>
 
 </head>
 <body>
 
-    
+
 
     <div id="home-top">
         <div id="home-nav-top">
+
+
+
+
+            
+            
+            
             <div id="navbar-container">
 
+                <div id="navbar">
+                    <div id="left-bar">
+                      <img src="https://coschedule.com/img/cos-logo-full-color.svg" alt="" id="navbar-logo">
+              
+                        <div id="rightSignIn">
+                          <h5 id="navbar-head">Products</h5>
+                          <div id="hover-p"></div> 
+                        </div>
+
+                        <div id="rightSignIn">
+                             <h5 id="navbar-head">Why Coschedule</h5>
+                            <div class="why-coschedule-hover"></div>
+                         </div>
+  
+                         <div id="rightSignIn">
+                             <h5 id="navbar-head">Resources</h5>
+                            <div class="resources-hover"></div>
+                        </div>
+
+              
+                      <h5 id="navbar-head">Pricing</h5>
+                    </div>
+                  <div id="right-bar">
+                       <a href="Signin.html">
+                        <h5 id="navbar-head">Sign In</h5>
+                      </a>
+                      <h5 id="navbar-head">Get Started Free</h5> 
+                      <button id="navbar-btn">Get A Demo</button>
+                  </div>
+                </div>
+
+
             </div>
+
+
+
+
+
+
+
+
+
             <div id="organise-marketing">
                 <h1>Organize All Of Your Marketing  In One Place. From Any Place.</h1>
                 <p id="organise-p">Get more done in less time with the only work management software for marketers.</p>
@@ -232,10 +324,27 @@
      let footer_cont = document.getElementById("footer-cont")
      footer_cont.innerHTML = footer()
 
-     import {navbar} from "./Scripts/navbar.js"
 
-     let navbar_cont = document.getElementById("navbar-container")
-     navbar_cont.innerHTML = navbar()
+
+
+     import {products} from "./Scripts/hovering.js"
+
+    let hover = document.getElementById("hover-p")
+    hover.innerHTML = products()
+
+
+
+     import {whycoschedule} from "./Scripts/hovering.js"
+
+     let why = document.querySelector(".why-coschedule-hover")
+         why.innerHTML = whycoschedule()
+
+
+
+    import {resources} from "./Scripts/hovering.js"
+
+    let reso = document.querySelector(".resources-hover")
+        reso.innerHTML = resources()
 
 
    
