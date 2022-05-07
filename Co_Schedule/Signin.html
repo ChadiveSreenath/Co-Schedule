@@ -45,9 +45,11 @@
             placeholder="Password"
           />
         </label>
-        <button id="login-btn">Sign In</button>
+        <button id="login-btn" onclick="loginfun()">Sign In</button>
         <span>
-          <p>Need an account?</p>
+          <a href="Signup.html" style="text-decoration: none;">
+            <p>Need an account?</p>
+          </a>
           <p>&nbsp;|&nbsp;</p>
           <p>Forgot your password?</p>
         </span>
@@ -56,25 +58,6 @@
   </body>
 </html>
 
-<script>
-
-    
-    // let arr = JSON.parse(localStorage.getItem('loginDetails')) || []
-
-    // let sigin = document.getElementById("login-btn").addEventListener("click",() =>{
-    //     let email = document.getElementById("login-email").value;
-    //     let password = document.getElementById("login-password").value;
-    //     let loginDetails = {
-    //         email : email,
-    //         password : password
-    //     }
-    //     arr.push(loginDetails);
-    //     console.log(arr)
-    //     localStorage.setItem("loginDetails", JSON.stringify(arr));
-    //     // console.log(loginDetails);
-    // })
-
-
-
+<script src="Scripts/signin.js">
 
 </script>

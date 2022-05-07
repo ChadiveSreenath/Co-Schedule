@@ -40,9 +40,10 @@ color: #999;
 height: 200px;
 width: 180px;
 padding: 0 18px;
-position: absolute;
+position: relative;
 min-width: 20px;
 box-shadow: 0 2px 35px -3px rgb(0 0 0 / 40%);
+border: 1px solid;
 }
 .create-new{
 font-size: 14px;
@@ -82,6 +83,8 @@ color: #4d4d4d;
 #rightSignIn {
 position: relative;
 display: inline-block;
+
+
 }
 
 #fafa-icon{

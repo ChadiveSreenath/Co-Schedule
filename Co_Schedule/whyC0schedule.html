@@ -5,117 +5,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main page</title>
-    <style>
-       
-        #notification-bar{
-            height: 450px;
-            width: 290px;
-            /* background-color: #ffffff; */
-            margin:auto;
-            border: 1px solid #eee;
-        }
-        #hr{ 
-           border: 0.1px solid #666;
-        }
-        #notification-bar-buttons{
-            height: 30px;
-            width: 290px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 15px;
-             cursor: pointer;
-            font-size: 16px;
-            font-weight: 500;
-            border: 0;
-            padding: 15px 10px;
-            box-sizing: border-box;
-
-        }
-        #notification-bar-buttons span:hover{
-            color: #d17760;
-        }
-        #down-notifications{
-            height: 400px;
-            display:none;
-
-        }
-        #down-notifications img{
-                height: 160px;
-                width: 110px;
-                padding: 60px;
-                margin-left: 40px;
-        }   
-        #down-notifications div{
-            font-size: 24.5px;
-            line-height: 20px;
-            font-weight: 400;
-            font-style: normal;
-            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-            text-align: center; 
-        }
-        #down-notifications h5{
-            font-size: 12px;
-            line-height: 20px;
-            font-weight: 400;
-            font-style: normal;
-            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-            margin-top: 10px;
-            text-align: center; 
-        }
-        #recent-notifications{
-            display: none;
-            width: 100%;
-            box-sizing: border-box;
-            flex-flow: column;
-            border-radius: 4px 4px 0 0;
-            max-height: calc(100% - 51px);
-        }
-        #notification-img{
-            width: 200px;
-            height: 70px;
-            border-radius: 6px;
-            padding: 0px 20px;
-            margin-left :11%;
-            margin-top: 70px;
-        }
-        .para{
-            font-weight: 700;
-            text-align: center;
-            color: #999;
-            margin: 50px 15px;
-            font-size: 13px;
-
-        }
-        #favourite-notifications{
-            display:none;
-        }
-        #favourite-notifications :focus{
-            color: #d17760;
-        }
-        .fav-img{
-            width: 200px;
-            height: 100px;
-            font-weight: 600;
-            border-radius: 6px;
-            padding: 0px 20px;
-            margin-left :11%;
-            margin-top: 70px;
-        }
-
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <link rel="stylesheet" href="Styles/whycoschedule.css">
 </head>
 <body>
 
+    <div id="main-top-cont" style="height: 38px;">
+        <span id="top-span">
 
+            <p id="loggedUser" style="margin-top: 15px; padding: 0px 30px; text-transform:capitalize;"></p>
+           <span">
+            <i class="fa-solid fa-house"></i> &nbsp;Home
+           </span>
+           
+        </span>
+    </div>
+
+    <div id="main-home-container">
+        <div id="sidebar">
+            <div id="top-side-bar" style="display: grid">
+                <a href="" style="text-decoration: none;">
+                    <span style="display: flex;">
+                        <i class="fa-solid fa-house"></i> 
+                        <p>Home</p>
+                    </span>
+                </a>
+                <a href="calender-page.html" style="text-decoration: none;">
+                    <span style="display: flex;">
+                        <i class="fa-solid fa-calendar"></i>
+                            <p>Calender</p>
+                     </span>
+                </a>
+                <a href="analytics.html" style="text-decoration: none;">
+                    <span>
+                        <i class="fa-solid fa-signal"></i>
+                            <p>Analytics</p>
+                    </span>
+                </a>
+
+                <span>
+                    <i class="fa-solid fa-shuffle"></i>
+                    <p>ReQueue</p>
+                </span>
+                
+                <a href="pricing.html" style="text-decoration: none;">
+                    <span style="margin-right: 65px;">
+                        <img  style="height: 15px; width: 17px;margin: auto;" class="badge-image" src="https://app.coschedule.com/img/downgrade/banner-7a6c6a653a0ba9fcfb4d6475f9ce7441.svg" alt="Badge with star">
+                       <p style="margin-top: 25px;">Upgrade</p>
+                   </span>
+   
+                </a>
+
+            </div>
+            <div id="lower-side-bar" style="display: grid;">
+
+                <span>
+                    <i class="fa-solid fa-gear"></i>
+                        <p>Settings</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-circle-question"></i>
+                        <p>Get Support</p>
+                 </span>
+            </div>
+        </div>
+
+        <div id="middle-container">
+
+
+            <div id="import-middle">
+                <h3 id="quickly" style="margin-top: 30px;">Quickly import projects to your calendar</h3>
+                <div  id="para-import">
+                        Click on the tool you currently use to manage your projects or Download our CSV template.
+                        The Bulk Project Import tool is also available via the Create menu.                    
+                </div>
+                <div id="images">
+                    
+                        <div class="bulk-import-options-wrapper">
+                            <button>
+                                <img src="	https://app.coschedule.com/img/competitor-tools/microsoft-excel-b2fbe2497f5019511a2587b02f684fec.svg" alt="">
+                              Microsoft Excel
+                            </button>
+                            <button>
+                                <img src="	https://app.coschedule.com/img/competitor-tools/monday-093821aaa889e3f3c686c8d65ed0512f.svg" alt="">
+                              Monday.com
+                            </button>
+                            <button>
+                                <img src="	https://app.coschedule.com/img/competitor-tools/google-sheets-fef337dac965d492fcc6f3fc2f23a5eb.svg" alt="">
+                              Google Sheets
+                            </button>
+                            <button>
+                              <img src="https://app.coschedule.com/img/competitor-tools/asana-5b3de9ab8d4b3b5be08da2ba57133c59.svg" class="bulk-import-icon">
+                              Asana
+                            </button>
+                            <button>
+                              <img src="https://app.coschedule.com/img/competitor-tools/wrike-9ec4a5a3b24cdec1d2f751f3c3391110.svg" class="bulk-import-icon">
+                              Wrike
+                            </button>
+                           
+                        </div>
+                        <div id="second-one" style="display: flex; justify-content: center;gap: 30px; background-color: #ffffff;">
+                            <button>
+                                <img src="https://app.coschedule.com/img/competitor-tools/trello-66af0f41e1112165ba8305c85aee835a.svg" class="bulk-import-icon">
+                                Trello
+                              </button>
+                              <button>
+                                <img src="https://app.coschedule.com/img/competitor-tools/divvyhq-d4ef6402ed5c5ca143c2b6f47ad60b56.svg" class="bulk-import-icon">
+                               DivvyHq
+                              </button>
+                              <button>
+                                <img src="	https://app.coschedule.com/img/competitor-tools/jira-50db388f3cf89fdb0b146fbb4c3bab72.svg" class="bulk-import-icon">
+                                Jira
+                              </button>
+                              <button>
+                                <img src="https://app.coschedule.com/img/competitor-tools/csv-e3d09c7a465cbbcebd5f8185ac4e1237.svg"class="bulk-import-icon">
+                                CSV File
+                              </button>
+                        </div>
+                </div>
+            </div>
+
+
+            <div id="achievement">
+
+                    <img src='https://www.linkpicture.com/q/IMG_20220507_211635.png' type='image' style="height:600px; width: 101%;">
+            </div>
+
+        </div>
+
+
+        
     <div id="notification-bar">
 
         <div id="notification-bar-buttons">
-            <span id="notifications" onclick="notification();">
-                Notifications</span>
+            <span id="notifications" onclick="notifications()">
+                Notifications
+            </span>
             <span id="recent" onclick="recent()">
                 Recent
             </span>
-            <span id="favourites" onclick="favourites();">
+            <span id="favourites" onclick="favourites()">
                 Favourites
             </span>
         </div>
@@ -132,101 +164,17 @@
                 <p class="para">Projects and campaigns that you have recently <br> visited will appear here.</p>
             </div>
             <div id="favourite-notifications">
-                <img class="fav-img" src='https://www.linkpicture.com/q/Screenshot_2022-05-04-11-09-23-28_40deb401b9ffe8e1df2f1cc5ba480b12.jpg' alt="">
+                <img class="fav-img" style="margin-left: 25%;" src='https://www.linkpicture.com/q/Screenshot_2022-05-04-11-09-23-28_40deb401b9ffe8e1df2f1cc5ba480b12.jpg' alt="">
                 <p class="para">Favorite projects and campaigns that you work on frequently and they will appear here.</p>
             </div>
 
         </div>
     </div>  
     
-
+    </div>
 
 </body>
 </html>
 
-<script>
-    let hidden =document.getElementById("hidden-content");
-    function notification(){
 
-        let down = document.querySelector("#down-notifications");
-        down.style.display="grid"
-    }
-    function recent(){
-        let recent = document.querySelector("#recent-notifications");
-        recent.style.display="flex"
-        
-    }
-    function favourites(){
-        let favouritesDiv = document.querySelector("#favourite-notifications");
-        favouritesDiv.style.display="grid"
-        
-    }
-
-</script>
-
-<!-- #analytics-down div{
-    width: 140px;
-    height: 170px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 25%);
-    border-radius: 6px;
-}
-
-
-#icon-facebook{
-    width: 110px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background-color: #3b5998;
-}
-#icon-social-engagement{
-    background-color: #3c73ae;
-
-    width: 235px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;    
-}
-#icon-instagram{
-    background-color: #e34061;
-
-    width: 235px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;  
-    margin: 10px;
-}
-#icon-twiter{
-    background-color: #2ca9e1;
-
-    width: 235px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;   
-}
-#icon-social-campaign{
-    background-color: #81bc7b;
-
-    width: 235px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;   
-}
-#icon-linkedin{
-    background-color: #0073a5;
-    width: 235px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;   
-}
-.social-engagement{
-   height: 200px;
-   width: 20%;
-   border: 1px solid red;
-} -->
+<script src="Scripts/whycoschedule.js"></script>c
